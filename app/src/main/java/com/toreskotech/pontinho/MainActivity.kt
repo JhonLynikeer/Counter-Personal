@@ -1,4 +1,4 @@
-package com.example.contador
+package com.toreskotech.pontinho
 
 import android.content.Intent
 import android.os.Bundle
@@ -11,12 +11,15 @@ import kotlinx.android.synthetic.main.activity_main.*
 class MainActivity : AppCompatActivity() {
 
 
-    private lateinit var nomeJogador1 : EditText
-    private lateinit var nomeJogador2 : EditText
+    private lateinit var nomeJogador1: EditText
+    private lateinit var nomeJogador2: EditText
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN)
+        window.setFlags(
+            WindowManager.LayoutParams.FLAG_FULLSCREEN,
+            WindowManager.LayoutParams.FLAG_FULLSCREEN
+        )
 
         setContentView(R.layout.activity_main)
 
@@ -38,6 +41,8 @@ class MainActivity : AppCompatActivity() {
             }
 
         }
+
+
     }
 
 
@@ -46,11 +51,11 @@ class MainActivity : AppCompatActivity() {
         var erro = false
 
         when {
-            nomeJogador1.text.isEmpty() && nomeJogador2.text.isEmpty() ->{
+            nomeJogador1.text.isEmpty() && nomeJogador2.text.isEmpty() -> {
                 errot.show()
                 erro = true
             }
-            nomeJogador1.text.isEmpty() ->{
+            nomeJogador1.text.isEmpty() -> {
                 errot = Toast.makeText(this, "Digite o nome do player 1!", Toast.LENGTH_SHORT)
                 errot.show()
                 erro = true
@@ -70,8 +75,12 @@ class MainActivity : AppCompatActivity() {
         // não chame o super desse método
         var voltar = 0
         voltar++
-        when{
-            voltar == 2 -> Toast.makeText(this, "Se aperta mais uma vez, o app encerra.",Toast.LENGTH_SHORT).show()
+        when {
+            voltar == 2 -> Toast.makeText(
+                this,
+                "Se aperta mais uma vez, o app encerra.",
+                Toast.LENGTH_SHORT
+            ).show()
             voltar == 3 -> finish()
         }
 
@@ -80,9 +89,8 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-
-
 }
+
 
 
 

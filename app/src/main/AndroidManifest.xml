@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.contador">
+    package="com.toreskotech.pontinho">
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/inco"
+        android:icon="@mipmap/ic_pontinho"
         android:label="@string/app_name"
-        android:roundIcon="@drawable/inco"
+        android:roundIcon="@mipmap/ic_pontinho"
         android:supportsRtl="true"
         android:theme="@style/Theme.Contador">
         <activity
-            android:name=".GameOver"
+            android:name="com.toreskotech.pontinho.GameOver"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Game"
+            android:name="com.toreskotech.pontinho.Game"
             android:exported="false"
             android:screenOrientation="landscape" />
         <activity
-            android:name=".MainActivity"
+            android:name="com.toreskotech.pontinho.MainActivity"
             android:exported="true"
             android:screenOrientation="portrait" >
             //portrait

@@ -1,4 +1,4 @@
-package com.example.contador
+package com.toreskotech.pontinho
 
 import android.content.Intent
 import android.graphics.Color
